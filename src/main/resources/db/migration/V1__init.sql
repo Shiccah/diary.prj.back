@@ -1,0 +1,1 @@
+create table entry (id uuid not null, content varchar(255), date_time timestamp, primary key (id));

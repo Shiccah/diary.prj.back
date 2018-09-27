@@ -1,0 +1,29 @@
+spring:
+  profiles:
+    active: development
+flyway:
+  locations: classpath:db/migration
+  enabled: true
+
+#spring:
+#  profiles: development
+#  datasource:
+#    type: com.zaxxer.hikari.HikariDataSource
+#    url: jdbc:oracle:thin:@localhost:5555:postgres
+#    driver-class-name: org.postgresql.Driver
+#    username: postgres
+#    password: admin
+#    hikari:
+#      minimum-idle: 10
+#      maximum-pool-size: 70
+#      idle-timeout: 600000
+#      connection-test-query: SELECT 1 FROM DUAL
+#  jpa:
+#    properties:
+#      hibernate:
+#        event.merge.entity_copy_observer: allow
+#        show_sql: true
+#        use_sql_comments: true
+#        format_sql: true
+#        ddl-auto: none
+#        dialect: org.hibernate.dialect.Oracle10gDialect
